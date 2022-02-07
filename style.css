@@ -1,0 +1,239 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Rowdies', cursive; */
+
+:root {
+    --main-color: #14b8a6;
+    --text-light-color: #e0f2fe;
+    --header-color: #ecfccb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Container*/
+
+.container {
+    border: 1px solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "sidebar header" "sidebar main" "sidebar main" "sidebar main";
+}
+
+div {
+    border: 1px solid red;
+}
+
+
+/*header*/
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--header-color);
+}
+
+
+/*Left side of header*/
+
+.headerLeft {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.searchBar {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchIcon,
+.profileImage,
+.iconsAndUsername {
+    display: grid;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.searchMenu>input {
+    width: 90%;
+    height: 20px;
+    border: 1px solid rgb(83, 76, 76);
+    background-color: rgb(192, 173, 173);
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.searchMenu>input:focus {
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+
+.profileGreetings {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 20px;
+}
+
+.profileGreetingsText {
+    display: grid;
+}
+
+.profileGreetingsTextP {
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+/*Right side of header*/
+
+.headerRight {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.iconsAndUsername {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-items: stretch;
+    gap: 10px;
+}
+
+.rightIcon {
+    display: grid;
+    justify-content: flex-end;
+}
+
+.rightImage {
+    display: grid;
+    justify-content: center;
+}
+
+.rightButtons {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 50px;
+    gap: 20px;
+}
+
+
+/*button*/
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 17px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 11px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    background-color: #0061a7;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/*sidebar*/
+
+.sidebar {
+    background-color: var(--main-color);
+    color: var(--text-light-color);
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 3fr;
+    gap: 40px;
+}
+
+.sideBarStuff,
+.sideBarStuff2,
+.sideLogo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.logos,
+.logos2,
+.Logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/*Make svgs white*/
+
+.svgColor {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(134deg) brightness(107%) contrast(102%);
+}
+
+.logoDescriptions,
+.logoDescriptions2,
+.sideText {
+    display: grid;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.logoDescriptions,
+.logoDescriptions2 {
+    font-family: 'Rowdies', cursive;
+}
+
+.logoDescriptions2 {}
+
+.logoDescriptions>p:hover,
+.logoDescriptions2>p:hover,
+.sideText>h2:hover {
+    cursor: pointer;
+    color: rgb(180, 167, 167);
+}
+
+
+/*main*/
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.yourProjects {
+    display: grid;
+    grid-template-rows: 50px 5fr;
+    padding: 15px;
+}
+
+.projects {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    height: 200px;
+    display: grid;
+    padding: 20px;
+}
