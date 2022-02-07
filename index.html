@@ -5,21 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Admin Dashboard</title>
-    <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&family=Rowdies&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
+    <div class="gridContainer">
 
+
+        <div class="sidebar">
+            <div class="sideLogo">
+
+                <div class="titleLogo">
+                    <img src="icons/shield-crown-outline.svg" alt="dashboard" class="svgColor" width="80px" height="80px">
+                </div>
+                <div class="logos">
+                    <img src="icons/home-outline.svg" alt="home" class="svgColor">
+                    <img src="icons/account-circle-outline.svg" alt="profile" class="svgColor">
+                    <img src="icons/message-reply-outline.svg" alt="messages" class="svgColor">
+                    <img src="icons/clock-time-one-outline.svg" alt="history" class="svgColor">
+                    <img src="icons/note-multiple-outline.svg" alt="tasks" class="svgColor">
+                    <img src="icons/account-group.svg" alt="Communities" class="svgColor">
+                </div>
+                <div class="logos2">
+                    <img src="icons/cog-outline.svg" alt="settings" class="svgColor">
+                    <img src="icons/face-agent.svg" alt="support" class="svgColor">
+                    <img src="icons/shield-check.svg" alt="Privacy" class="svgColor">
+                </div>
+            </div>
+            <div class="sideBarStuff">
+
+                <div class="sideText">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="menuDescription">
+                    <p>Home</p>
+                    <p>Profile</p>
+                    <p>Messages</p>
+                    <p>History</p>
+                    <p>Tasks</p>
+                    <p>Communities</p>
+                </div>
+                <div class="menuDescription2">
+                    <p>Settings</p>
+                    <p>Support</p>
+                    <p>Privacy</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
         <div class="header">
-
             <div class="headerLeft">
                 <div class="searchBar">
                     <div class="searchIcon">
@@ -65,57 +106,14 @@
             </div>
 
 
-
-        </div>
-        <div class="sidebar">
-            <div class="sideLogo">
-                <div class="Logo"><img src="icons/shield-crown-outline.svg" alt="dashboard" class="svgColor" width="80px" height="80px">
-                </div>
-                <div class="sideText">
-                    <h2>Dashboard</h2>
-                </div>
-
-            </div>
-            <div class="sideBarStuff">
-                <div class="logos">
-                    <img src="icons/home-outline.svg" alt="home" class="svgColor">
-                    <img src="icons/account-circle-outline.svg" alt="profile" class="svgColor">
-                    <img src="icons/message-reply-outline.svg" alt="messages" class="svgColor">
-                    <img src="icons/clock-time-one-outline.svg" alt="history" class="svgColor">
-                    <img src="icons/note-multiple-outline.svg" alt="tasks" class="svgColor">
-                    <img src="icons/account-group.svg" alt="Communities" class="svgColor">
-                </div>
-                <div class="logoDescriptions">
-                    <p>Home</p>
-                    <p>Profile</p>
-                    <p>Messages</p>
-                    <p>History</p>
-                    <p>Tasks</p>
-                    <p>Communities</p>
-                </div>
-            </div>
-            <div class="sideBarStuff2">
-                <div class="logos2">
-                    <img src="icons/cog-outline.svg" alt="settings" class="svgColor">
-                    <img src="icons/face-agent.svg" alt="support" class="svgColor">
-                    <img src="icons/shield-check.svg" alt="Privacy" class="svgColor">
-
-                </div>
-                <div class="logoDescriptions2">
-                    <p>Settings</p>
-                    <p>Support</p>
-                    <p>Privacy</p>
-
-                </div>
-            </div>
         </div>
 
         <div class="main">
-            <div class="yourProjects">
+            <div class="projects">
                 <div class="projectsTitle">
                     <h2>Your Projects</h2>
                 </div>
-                <div class="projects">
+                <div class="projectCards">
                     <div class="card">
                         <div class="cardTitle">
                             <h3>Super Cool Project</h3>
@@ -131,7 +129,7 @@
                     </div>
                     <div class="card">
                         <div class="cardTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Less Cool Project</h3>
                         </div>
                         <div class="cardText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut doloremque amet qui minus sed inventore fuga velit ad hic totam, atque id delectus, eaque ex!</p>
@@ -144,7 +142,7 @@
                     </div>
                     <div class="card">
                         <div class="cardTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Impossible App</h3>
                         </div>
                         <div class="cardText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut doloremque amet qui minus sed inventore fuga velit ad hic totam, atque id delectus, eaque ex!</p>
@@ -157,7 +155,7 @@
                     </div>
                     <div class="card">
                         <div class="cardTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Easy Peasy App</h3>
                         </div>
                         <div class="cardText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut doloremque amet qui minus sed inventore fuga velit ad hic totam, atque id delectus, eaque ex!</p>
@@ -170,7 +168,7 @@
                     </div>
                     <div class="card">
                         <div class="cardTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Ad Blocker</h3>
                         </div>
                         <div class="cardText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut doloremque amet qui minus sed inventore fuga velit ad hic totam, atque id delectus, eaque ex!</p>
@@ -183,7 +181,7 @@
                     </div>
                     <div class="card">
                         <div class="cardTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Money Maker</h3>
                         </div>
                         <div class="cardText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut doloremque amet qui minus sed inventore fuga velit ad hic totam, atque id delectus, eaque ex!</p>
@@ -196,14 +194,16 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="announcments">
                 <div class="announcmentsTitle">
                     <h2>Announcments</h2>
                 </div>
-                <div class="announcmentsContainer">
+                <div class="announcmentCard">
                     <div class="announcment">
                         <div class="announcmentTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Site Maintanance</h3>
                         </div>
                         <div class="announcmentText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut </p>
@@ -211,7 +211,7 @@
                     </div>
                     <div class="announcment">
                         <div class="announcmentTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Community Share Day</h3>
                         </div>
                         <div class="announcmentText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut </p>
@@ -219,19 +219,17 @@
                     </div>
                     <div class="announcment">
                         <div class="announcmentTitle">
-                            <h3>Super Cool Project</h3>
+                            <h3>Updated Privacy Policy</h3>
                         </div>
                         <div class="announcmentText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore animi architecto optio iure aut </p>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="trendingTitle">
                     <h2>Trending</h2>
                 </div>
-                <div class="trendingContainer">
+                <div class="trendingCard">
                     <div class="trending">
                         <div class="trendingPhoto">
                             <img src="images/—Pngtree—business people avatar icon user_4815126.png" alt="profile image" width="40px" height="40px"></div>
@@ -269,13 +267,10 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-
     </div>
 
-
+    </div>
 </body>
 
 </html>
